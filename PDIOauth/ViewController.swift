@@ -1,19 +1,13 @@
+import AuthenticationServices
+import SafariServices
 import UIKit
-import WebKit
 
-// Usar safari services
-
-class LoginViewController: UIViewController, WKNavigationDelegate {
-    var webView: WKWebView!
+class LoginViewController: UIViewController, ASWebAuthenticationPresentationContextProviding {
     
-    override func loadView() {
-        webView = WKWebView()
-        webView.navigationDelegate = self
-        view = webView
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .gray
+        overrideUserInterfaceStyle = .dark
                         
         let button = UIButton(frame: CGRect(x: 100, y: 700, width: 200, height: 50))
         button.backgroundColor = .black
@@ -24,7 +18,19 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
     }
     
     @objc func handlePresentingVC() {
-        let url = URL(string: "https://www.github.com/login")!
-        webView.load(URLRequest(url: url))
+        guard let url = URL(string: "https://github.com/login/oauth/authorize") else { return }
+        let scheme = "pdioauth"
+        let session = ASWebAuthenticationSession(url: url, callbackURLScheme: scheme)
+        { callbackURL, error in
+            print("show")
+        }
+        
+        session.presentationContextProvider = self
+        session.start()
+
     }
+    
+    func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
+            return view.window!
+        }
 }
