@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B9D96992873BA3D0066A083 /* secretList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D96982873BA3D0066A083 /* secretList.plist */; };
+		8B9D969B2873C3F50066A083 /* SecretList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D969A2873C3F50066A083 /* SecretList.swift */; };
 		8BC6D9E528628C98006BF3D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6D9E428628C98006BF3D3 /* AppDelegate.swift */; };
 		8BC6D9E728628C98006BF3D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6D9E628628C98006BF3D3 /* SceneDelegate.swift */; };
 		8BC6D9E928628C98006BF3D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6D9E828628C98006BF3D3 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B9D96982873BA3D0066A083 /* secretList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secretList.plist; sourceTree = "<group>"; };
+		8B9D969A2873C3F50066A083 /* SecretList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretList.swift; sourceTree = "<group>"; };
 		8BC6D9E128628C98006BF3D3 /* PDIOauth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDIOauth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC6D9E428628C98006BF3D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BC6D9E628628C98006BF3D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				8BC6D9ED28628C99006BF3D3 /* Assets.xcassets */,
 				8BC6D9EF28628C99006BF3D3 /* LaunchScreen.storyboard */,
 				8BC6D9F228628C99006BF3D3 /* Info.plist */,
+				8B9D96982873BA3D0066A083 /* secretList.plist */,
+				8B9D969A2873C3F50066A083 /* SecretList.swift */,
 			);
 			path = PDIOauth;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC6D9F128628C99006BF3D3 /* LaunchScreen.storyboard in Resources */,
+				8B9D96992873BA3D0066A083 /* secretList.plist in Resources */,
 				8BC6D9EE28628C99006BF3D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC6D9E928628C98006BF3D3 /* ViewController.swift in Sources */,
+				8B9D969B2873C3F50066A083 /* SecretList.swift in Sources */,
 				8BC6D9E528628C98006BF3D3 /* AppDelegate.swift in Sources */,
 				8BC6D9E728628C98006BF3D3 /* SceneDelegate.swift in Sources */,
 			);
